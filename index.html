@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://use.fontawesome.com/e9c73d6974.js"></script>
+</head>
+<body>
+  <header>
+    <div class="intro">
+      <div class="intro-callback">
+        <b>Questions? Need Help?</b> Call us on (+123) 456 1500
+      </div>
+      <div class="intro-benefits">
+        <div class="benefits-info">
+          <img src="img/gift.svg" alt="Hotel Booking">
+          <span>BTP Gift Card</span>
+        </div>
+        <div class="benefits-info">
+          <img src="img/star.svg" alt="Hotel Booking">
+          <span>Loyalty Program</span>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="logo">
+        Best <span>tour</span> plan
+      </div>
+      <form>
+        <input type="text" class="form-input" placeholder="Search Location">
+        <button class="btn form-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <div class="cart">
+        <img src="img/shopping-cart.svg" alt="Hotel Booking">
+      </div>
+      <div class="auth">
+        <button class="btn auth-btn">
+          Войти
+        </button>
+        <div class="avatar">
+          <img src="img/me.jpg" alt="Hotel Booking">
+        </div>
+        <span>Stanislav</span>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <nav class='menu'>
+        <a href="#" class="nav-link">All Deals</a>
+        <a href="#" class="nav-link">Hotels</a>
+        <a href="#" class="nav-link">Activities</a>
+        <a href="#" class="nav-link">Hotel Day Packages</a>
+        <a href="#" class="nav-link">Restaurants</a>
+        <a href="#" class="nav-link">Events</a>
+        <a href="#" class="nav-link">Rodrigues</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="hotel">
+        <div class="hotel-head">
+          <div class="hotel-name">
+            <img src="img/Stars.svg" alt="Hotel Booking">
+            <div class="hotel-offer">
+              <h2 class="hotel-title">
+              GRAND HILTON HOTEL
+            </h2>
+            <button class="btn hotel-btn">
+              Flash Offer
+            </button>
+            </div>
+            <div class="hotel-services">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+            </div>
+          </div>
+          <div class="hotel-rate">
+            <div class="btn rate">
+              <small>User Rattings</small>
+              4.5/<span>5</span>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-info">
+          <ul class="hotel-images" id="all-hotels">
+            <li class="hotel-images-item hotel-images-item-active">
+              <img src="img/hotelImg.jpg" alt="Hotel Booking">
+            </li>
+            <li class="hotel-images-item">
+              <img src="img/hotelImg2.jpg" alt="Hotel Booking">
+            </li>
+            <li class="hotel-images-item">
+              <img src="img/hotelImg3.jpg" alt="Hotel Booking">
+            </li>
+
+            <a href="#" class="hotel-images__btn prev" id="arrow-left">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a href="#" class="hotel-images__btn next" id="arrow-right">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </ul>
+          <div class="hotel-variety">
+            <div class="hotel-card__small">
+              <div class="hotel-room">
+                <div class="hotel-price">
+                  <small>price starts as</small>
+                  $ 8,500
+                  <span>per room / night</span>
+                </div>
+                <div class="hotel-card-service ">
+                  <div class="persons-count">
+                    <img src="img/user.svg" alt="Hotel Booking">
+                    <span>2 x Guests</span>
+                  </div>
+                  <div class="persons-count">
+                    <img src="img/home.svg" alt="Hotel Booking">
+                    <span>1 x Room</span>
+                  </div>
+                </div>
+              </div>
+              <div class="booking">
+                <span>
+                  Quick Booking
+                </span>
+                <img src="img/phone.svg" alt="Hotel Booking">
+                <span>12100</span>
+              </div>
+              <button class="btn card-btn">
+                View Other Options
+              </button>
+            </div>
+            <map class="hotel-direction">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f2612d4203903093abad5d99f63f1dc52be187b27d7df81a609c236bc42fedf&amp;source=constructor" width="347" height="240" frameborder="0"></iframe>
+            </map>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section id="service-block" class="service">
+    <div class="container">
+      <div class="service-header">
+        <div class="service-header-tab active">Package Summery</div>
+        <div class="service-header-tab">Hotel Information</div>
+        <div class="service-header-tab">Rooms</div>
+        <div class="service-header-tab">Facilities & Activities</div>
+        <div class="service-header-tab">Dining & Entertainment</div>
+        <div class="service-header-tab">Reviews</div>
+        <div class="service-header-tab">Questions & Answers</div>
+      </div>
+
+      <div class="service-tab">
+        <h3 class="service-title">
+          Package Summery
+        </h3>
+        <div class="services-details">
+          <div class="details-item">
+            <div class="details-title">
+              Package Highlights
+            </div>
+            <ul class="details-list">
+              <li class="details-list__item">
+                Half Board/ All Inclusive
+              </li>
+              <li class="details-list__item">
+                Luxurious 5-Star Hotel
+              </li>
+              <li class="details-list__item">
+                Child Under 11 Years Stay Free
+              </li>
+              <li class="details-list__item">
+                LUX* Me Spa
+              </li>
+              <li class="details-list__item">
+                Banyan An Adult Only Zone 
+              </li>
+            </ul>
+          </div>
+
+          <div class="details-item">
+            <div class="details-title">
+              Offer Details
+            </div>
+            <ul class="details-list">
+              <li class="details-list__item">
+                Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.
+              </li>
+              <li class="details-list__item details-calendar">
+                10th March - 30th April 2020
+              </li>
+              <li class="details-valid">
+              * Valid until 30 April 2020
+              </li>
+            </ul>
+          </div>
+
+          <div class="details-item">
+            <div class="details-title">
+              Package Summery Details
+            </div>
+            <div class="summery-details">
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Purchase Inclusions
+                </li>
+                <li class="details-list__item">
+                  Room as per selection
+                </li>
+                <li class="details-list__item">
+                  Half Board or All Inclusive Meal Plan
+                </li>
+                <li class="details-list__item">
+                  Complimentary Land & Water activities
+                </li>
+                <li class="details-list__item">
+                  Child Under 11 years old stays free
+                </li>
+                <li class="details-list__item">
+                  Free Wi-Fi
+                </li>
+                <li class="details-list__item">
+                  Free Secure Parking
+                </li>
+              </ul>
+
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Complimentary Land Based Activities
+                </li>
+                <li class="details-list__item">
+                  Gym
+                </li>
+                <li class="details-list__item">
+                  Beach Volley
+                </li>
+                <li class="details-list__item">
+                  Table tennis
+                </li>
+                <li class="details-list__item">
+                  Soccer balls
+                </li>
+                <li class="details-list__item">
+                  Yoga
+                </li>
+                <li class="details-list__item">
+                  Unlimited access to driving range
+                </li>
+              </ul>
+
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Complimentary Water Based Activities
+                </li>
+                <li class="details-list__item">
+                  Water skiing
+                </li>
+                <li class="details-list__item">
+                  Windsurfing
+                </li>
+                <li class="details-list__item">
+                  Pedal boats
+                </li>
+                <li class="details-list__item">
+                  Kayaking
+                </li>
+                <li class="details-list__item">
+                  Aqua Gym
+                </li>
+                <li class="details-list__item">
+                  Glass bottom boat trips
+                </li>
+              </ul>
+              <div class="details-line"></div>
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Meal Plan Available
+                </li>
+                <li class="details-list__item">
+                  Half Board
+                </li>
+                <li class="details-list__item">
+                  All Inclusive
+                </li>
+              </ul>
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Entertainment
+                </li>
+                <li class="details-list__item">
+                  Live music
+                </li>
+                <li class="details-list__item">
+                  DJ & Mauritian Dance Show
+                </li>
+              </ul>
+              <ul class="details-list summery-details__list">
+                <li class="details-list__title">
+                  Check In & Check Out
+                </li>
+                <li class="details-list__item">
+                  Check In Time 14:00
+                </li>
+                <li class="details-list__item">
+                  Check Out Time 11:00
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+      <div class="service-tab d-none">
+        <h3>It will be new content soon</h3>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2 class="title">
+        Other Packages
+      </h2>
+      <div class="packages">
+        <div class="package-item">
+          <div class="hotel-image">
+            <img class="hotel-image__radius" src="img/hotel1.png" alt="Hotel Booking">
+          </div>
+          <div class="hotel-card open-card">
+            <div class="hotel-card__title">
+              <img src="img/Stars.svg" alt="Hotel Booking">
+              <div class="hotel-name">
+                Hotel Blue Haven
+              </div>
+            </div>
+            <div class="hotel-description">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </div>
+            <div class="hotel-show-name hotel-show-name__opacity">
+              Hotel Blue Haven
+            </div>
+            <div class="hotel-card-service">
+              <div class="persons-count">
+                <img src="img/map-pin.svg" alt="Hotel Booking">
+                <span>1749 Wheeler Ridge  Delaware</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/user.svg" alt="Hotel Booking">
+                <span>2 x Guests</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/home.svg" alt="Hotel Booking">
+                <span>1 x Room</span>
+              </div>
+            </div>
+            <div class="crossOut-price">
+              $ 10,500
+            </div>
+            <div class="hotel-book">
+              <div class="hotel-price">
+                $ 8,500
+              </div>
+              <button class="btn book-btn">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="package-item">
+          <div class="hotel-image">
+            <img class="hotel-image__radius hotel-show" src="img/hotel2.png" alt="Hotel Booking">
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-card__title">
+              <img src="img/Stars.svg" alt="Hotel Booking">
+              <div class="hotel-name">
+                LUX* Belle Mare
+              </div>
+            </div>
+            <div class="hotel-description">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </div>
+            <div class="hotel-show-name ">
+              LUX* Belle Mare
+            </div>
+            <div class="hotel-card-service">
+              <div class="persons-count">
+                <img src="img/map-pin.svg" alt="Hotel Booking">
+                <span>1749 Wheeler Ridge  Delaware</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/user.svg" alt="Hotel Booking">
+                <span>2 x Guests</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/home.svg" alt="Hotel Booking">
+                <span>1 x Room</span>
+              </div>
+            </div>
+            <div class="crossOut-price">
+              $ 8,500
+            </div>
+            <div class="hotel-book">
+              <div class="hotel-price">
+                $ 3000
+              </div>
+              <button class="btn book-btn">
+                Book Now
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="hotel-image">
+            <img class="hotel-image__radius hotel-show" src="img/hotel3.png" alt="Hotel Booking">
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-card__title">
+              <img src="img/Stars.svg" alt="Hotel Booking">
+              <div class="hotel-name">
+                White Palace
+              </div>
+            </div>
+            <div class="hotel-description">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </div>
+            <div class="hotel-show-name ">
+              White Palace
+            </div>
+            <div class="hotel-card-service">
+              <div class="persons-count">
+                <img src="img/map-pin.svg" alt="Hotel Booking">
+                <span>1749 Wheeler Ridge  Delaware</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/user.svg" alt="Hotel Booking">
+                <span>2 x Guests</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/home.svg" alt="Hotel Booking">
+                <span>1 x Room</span>
+              </div>
+            </div>
+            <div class="crossOut-price">
+              $ 10,500
+            </div>
+            <div class="hotel-book">
+              <div class="hotel-price">
+                $ 9,500
+              </div>
+              <button class="btn book-btn">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="hotel-image">
+            <img class="hotel-image__radius hotel-show" src="img/hotel4.png" alt="Hotel Booking">
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-card__title">
+              <img src="img/Stars.svg" alt="Hotel Booking">
+              <div class="hotel-name">
+                Luxury Place
+              </div>
+            </div>
+            <div class="hotel-description">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </div>
+            <div class="hotel-show-name ">
+              Luxury Place
+            </div>
+            <div class="hotel-card-service">
+              <div class="persons-count">
+                <img src="img/map-pin.svg" alt="Hotel Booking">
+                <span>1749 Wheeler Ridge  Delaware</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/user.svg" alt="Hotel Booking">
+                <span>2 x Guests</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/home.svg" alt="Hotel Booking">
+                <span>1 x Room</span>
+              </div>
+            </div>
+            <div class="crossOut-price">
+              $ 4,500
+            </div>
+            <div class="hotel-book">
+              <div class="hotel-price">
+                $ 2,500
+              </div>
+              <button class="btn book-btn">
+                Book Now
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="package-item">
+          <div class="hotel-image">
+            <img class="hotel-image__radius hotel-show" src="img/hotel5.png" alt="Hotel Booking">
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-card__title">
+              <img src="img/Stars.svg" alt="Hotel Booking">
+              <div class="hotel-name">
+                Hotel Five Star
+              </div>
+            </div>
+            <div class="hotel-description">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </div>
+            <div class="hotel-show-name ">
+              Hotel Five Star
+            </div>
+            <div class="hotel-card-service">
+              <div class="persons-count">
+                <img src="img/map-pin.svg" alt="Hotel Booking">
+                <span>1749 Wheeler Ridge  Delaware</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/user.svg" alt="Hotel Booking">
+                <span>2 x Guests</span>
+              </div>
+              <div class="persons-count">
+                <img src="img/home.svg" alt="Hotel Booking">
+                <span>1 x Room</span>
+              </div>
+            </div>
+            <div class="crossOut-price">
+              $ 6,500
+            </div>
+            <div class="hotel-book">
+              <div class="hotel-price">
+                $ 3,500
+              </div>
+              <button class="btn book-btn">
+                Book Now
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2 class="title">
+        What people thinks about us
+      </h2>
+      <div class="reviews-slider-wrap">
+          <div class="slider-arrow slider-arrow_left" id="reviews-arrow_left">
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <div class="slider-arrow slider-arrow_right" id="reviews-arrow_right">
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="reviews-slider__slide reviews-slider__slide-active">
+            <img src="img/Vector1.svg" alt="Booling Hotel" class="reviews-slider-wrap__bg">
+            <img src="img/Vector2.svg" alt="Booling Hotel" class="reviews-slider-wrap__reverse-bg">
+            <div class="reviews-slider__slide-img">
+              <img src="img/person1.png" alt="Booling Hotel">
+            </div>
+            <div class="reviews-slider__slide-title">
+              Megan Fox
+            </div>
+            <div class="reviews-slider__slide-date">
+              Stayed 18 Nov, 2019
+            </div>
+            <img src="img/Stars.svg" alt="Booking Hotel">
+            <div class="reviews-slider__slide-description">
+              It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+            </div>
+          </div>
+
+          <div class="reviews-slider__slide">
+            <img src="img/Vector1.svg" alt="Booling Hotel" class="reviews-slider-wrap__bg">
+            <img src="img/Vector2.svg" alt="Booling Hotel" class="reviews-slider-wrap__reverse-bg">
+            <div class="reviews-slider__slide-img">
+              <img src="img/review2.jpg" alt="Booling Hotel">
+            </div>
+            <div class="reviews-slider__slide-title">
+              Johnny Depp 
+            </div>
+            <div class="reviews-slider__slide-date">
+              Stayed 12 Sep, 2020
+            </div>
+            <img src="img/Stars.svg" alt="Booking Hotel">
+            <div class="reviews-slider__slide-description">
+              It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. 
+            </div>
+          </div>
+
+          <div class="reviews-slider__slide">
+            <img src="img/Vector1.svg" alt="Booling Hotel" class="reviews-slider-wrap__bg">
+            <img src="img/Vector2.svg" alt="Booling Hotel" class="reviews-slider-wrap__reverse-bg">
+            <div class="reviews-slider__slide-img">
+              <img src="img/review3.jpg" alt="Booling Hotel">
+            </div>
+            <div class="reviews-slider__slide-title">
+              Hugh Jackman
+            </div>
+            <div class="reviews-slider__slide-date">
+              Stayed 29 Jan, 2021
+            </div>
+            <img src="img/Stars.svg" alt="Booking Hotel">
+            <div class="reviews-slider__slide-description">
+              It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places. 
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="subscribe">
+    <div class="container">
+      <div class="sub">
+        <div class="sub-title">
+          <span>subscribe to our</span>
+          Newsletter
+        </div>
+        <form class="sub-form">
+          <input type="email" class="form-input" placeholder="Your email address">
+          <button class="btn form-btn">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h3 class="service-title">
+        Other Activities
+      </h3>
+      <div class="activities">
+        <div class="activity-card">
+          <div class="activity-title">
+            The curious corner 
+            of chamarel
+          </div>
+          <button class="btn activity-btn">
+            Flash Offer
+          </button>
+        </div>
+        <div class="activity-card">
+          <div class="activity-title">
+            The curious corner 
+            of chamarel
+          </div>
+          <button class="btn activity-btn">
+            Flash Offer
+          </button>
+        </div>
+        <div class="activity-card">
+          <div class="activity-title">
+            The curious corner 
+            of chamarel
+          </div>
+          <button class="btn activity-btn">
+            Flash Offer
+          </button>
+        </div>
+        <div class="activity-card">
+          <div class="activity-title">
+            The curious corner 
+            of chamarel
+          </div>
+          <button class="btn activity-btn">
+            Flash Offer
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="contacts">
+        <ul class="logo footer-logo">
+          <li class="logo-item">
+            Best
+          </li>
+          <li class="logo-item">
+            Tour
+          </li>
+          <li class="logo-item">
+            Plan
+          </li>
+        </ul>
+        <ul class="contacts-categories">
+          <li>
+            <a href="#" class="categories-title">
+              ALL CATEGORIES
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              All Deals
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Hotels
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Activities
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Spa Packages
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Hotel Day Packages
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Restaurants
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Fitness
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Rodrigues
+            </a>
+          </li>
+        </ul>
+
+        <ul class="contacts-categories">
+          <li>
+            <a href="#" class="categories-title">
+              ADDITIONAL INFORMATION
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              How does it work?
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Frequently Asked Questions
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Deals.mu loyalty program
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Promote your Business on BTP
+            </a>
+          </li>
+          <div class="media-res">
+            <span>
+              Social Network
+            </span> 
+            <div class="medai-image">
+              <a href="#">
+                <img src="img/youtube.svg" alt="Booking Hotel">
+              </a>
+              <a href="#">
+                <img src="img/instagram.svg" alt="Booking Hotel">
+              </a>
+            </div>
+          </div>
+        </ul>
+
+        <ul class="contacts-categories">
+          <li>
+            <a href="#" class="categories-title">
+              LEGAL INFORMATION
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Terms & Conditions
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Disclaimer
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Cancellation policy
+            </a>
+          </li>
+          <li>
+            <a href="#" class="categories-link">
+              Privacy
+            </a>
+          </li>
+        </ul> 
+      </div>
+      <div class="contacts-details">
+        <div class="contacts-details-item">
+          <div class="contacts-details-title">
+            Contact Details
+            <span class="footer-text">
+              Feel free to contact us by phone, email or by our contact form
+            </span>
+          </div>
+          <div class="contact">
+            <div class="contact-item">
+              <img src="img/location.svg" alt="Booking Hotel">
+              <span class="footer-text">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+            </div>
+            <div class="contact-item">
+              <img src="img/phone-call.svg" alt="Booking Hotel">
+              <span class="footer-text">Tel (business hours) : 269 1500
+              <br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
+              <br> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              </span>
+            </div>
+            <div class="contact-item">
+              <img src="img/email.svg" alt="Booking Hotel">
+              <span class="footer-text">cherly.lawson@example.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-details-item">
+          <div class="contacts-details-title">
+            Send us a message
+          </div>
+          <form class="footer-form">
+            <input type="text" class="form-input footer-input" placeholder="Your Full Name*" required>
+            <input type="phone" class="form-input footer-input" placeholder="Phone Number*" required>
+            <textarea class="textarea" placeholder="Message"></textarea>
+            <div class="btn-block">
+              <button class="btn footer-btn">Send</button>
+              <div class="requared">* Required Fields</div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-item">
+          <span>
+            <a href="#">Disclaimer</a>
+          </span>
+          <span>
+            <a href="#">Conditions of use</a>
+          </span>
+          <span>
+            <a href="#">Cancellation policy</a>
+          </span>
+        </div>
+        <div class="footer-item">
+          <img src="img/partners.svg" alt="Booking Hotel">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>

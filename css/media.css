@@ -1,0 +1,221 @@
+@media (max-width: 1300px) {
+  .intro {
+    padding: 17px 40px;
+  }
+  .header {
+    padding: 40px;
+  }
+  .logo {
+    margin-right: 65px;
+  }
+  .navbar {
+    padding: 31px 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 97%;
+  }
+  .hotel-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .hotel-variety {
+    margin-top: 515px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-btn {
+    margin-top: 70px;
+  }
+  .hotel-images {
+    margin: 0 auto;
+  }
+  .hotel-images__btn {
+    top: 215px;
+  }
+  .packages {
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 992px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header form {
+    order: 1;
+    margin-top: 15px;
+  }
+  .navbar {
+    padding: 31px 21px;
+  }
+  .hotel-images {
+    width: 97%;
+  }
+  .service-header-tab {
+    font-size: 11px;
+  }
+  .slider-arrow_left {
+    left: 3%;
+  }
+  .slider-arrow_right {
+    right: 3%;
+  }
+  .sub {
+    justify-content: space-around;
+    width: 750px;
+  }
+  .activities {
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 810px) {
+  .hotel-image__radius {
+    pointer-events: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .benefits-info {
+    margin-left: 15px;
+  }
+  .navbar nav {
+    flex-direction: column;
+    display: none;
+  }
+  .nav-link {
+    margin-top: 10px;
+  }
+  .burger {
+    display: flex;
+  }
+  .burger-line-cross:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 14px;
+  }
+  .burger-line-cross:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -7px;
+  }
+  .burger-line-cross:nth-child(3) {
+    display: none;
+  }
+  .hotel-images-item img {
+    width: 97%;
+  }
+  .hotel-images__btn {
+    top: 145px;
+  }
+  .hotel-variety {
+    flex-direction: column;
+    margin-top: 480px;
+  }
+  .service-header {
+    flex-direction: column;
+  }
+  .service-header-tab {
+    margin-top: 15px;
+  }
+  .reviews-slider__slide,
+  .reviews-slider-wrap {
+    width: 97%;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  .sub-title span {
+    font-size: 14px;
+  }
+  .sub {
+    width: 100%;
+  }
+  .form-input {
+    width: 70%;
+  }
+  .contacts-details {
+    flex-direction: column;
+  }
+  .contacts-details-item {
+    margin-top: 25px;
+  }
+  .footer-input {
+    margin-top: 15px;
+  }
+  .contacts {
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    flex-basis: 100%;
+  }
+  .contacts-categories {
+    margin-top: 25px;
+  }
+  .textarea {
+    width: 97%;
+}
+
+@media(min-width: 320px) and (max-width: 430px) {
+  .intro {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .intro-benefits {
+    margin: 0px;
+    margin-top: 15px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo, .cart, .auth {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .hotel-offer {
+    flex-direction: column;
+  }
+  .hotel-btn {
+    display: none;
+  }
+  .hotel-images__btn {
+    top: 65px;
+  }
+  .next {
+    right: 7%;
+  }
+  .hotel-card,
+  .hotel-direction iframe{
+    width: 300px;
+  }
+  .booking img {
+    margin-left: 35px;
+  }
+  .hotel-variety {
+    margin-top: 255px;
+  }
+  .hotel-show {
+    height: 307px;
+  }
+  .package-item {
+    height: 560px;
+  }
+  #subscribe {
+    margin-top: 668px;
+  }
+  .sub {
+    flex-direction: column;
+  }
+  .footer-item:last-child {
+    position: static;
+    right: 0;
+  }
+  .contacts {
+    padding: 0 15px;
+  }
+  .hotel-card__small {
+    width: 305px;
+  }
+}
